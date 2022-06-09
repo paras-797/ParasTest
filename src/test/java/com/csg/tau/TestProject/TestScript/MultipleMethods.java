@@ -20,50 +20,50 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class MultipleMethods {
-	@BeforeSuite
+	@Test(priority=2)
 	public void btest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 
 		System.out.println("btest is running");
 		driver.close();
 
 	}
-	@Test
+	@Test(priority=1)
 	public void ctest() throws InterruptedException {
 
 		System.out.println("ctest is running");
 
 	}
-	@BeforeMethod
+	@Test(priority=4)
 	public void atest() throws InterruptedException {
 
 		System.out.println("atest is running");
 
 	}		
 
-	@BeforeClass
+	@Test(priority=3)
 	public void ztest() throws InterruptedException {
 
 		System.out.println("ztest is running");
 
 	}
 
-	@BeforeTest
+	@Test(priority=0)
 	public void ktest() throws InterruptedException {
 
 		System.out.println("ktest is running");
 
 	}
 
-	@AfterClass
+	@Test(priority=0, enabled=false)
 	public void ltest() throws InterruptedException {
 
 		System.out.println("ltest is running");
 
 	}
 
-	@AfterSuite
+	@Test
 	public void mtest() throws InterruptedException {
 
 		System.out.println("mtest is running");

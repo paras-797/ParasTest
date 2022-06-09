@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestString {
 	@Test
 	public void test() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 			String str="I am Learning java";

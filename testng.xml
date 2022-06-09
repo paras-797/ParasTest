@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SmokeSuite">
-  <test thread-count="5" parallel="classes" name="Test">
+<suite name="Suite">
+  <test thread-count="2" name="smoke" parallel="classes">
     <classes>
       <class name="com.csg.tau.TestProject.TestScript.TestString"/>
       <class name="com.csg.tau.TestProject.TestScript.MultipleMethods"/>
-     <class name="com.csg.tau.TestProject.TestScript.WindlowHandlling"/>
+      <class name="com.csg.tau.TestProject.TestScript.AlertHandling"/>
+      <class name="com.csg.tau.TestProject.TestScript.AlertsHandle"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

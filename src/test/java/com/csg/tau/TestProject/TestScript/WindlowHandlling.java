@@ -8,15 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class WindlowHandlling {
-	@Test
-		public void test1() throws InterruptedException {
+	
+	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://demo.automationtesting.in/Windows.html");
-		WebElement button=driver.findElement(By.xpath("//button[contains(@class,'btn-info') and (text()='    click   ')]"));
 		String parent=driver.getWindowHandle();
+		WebElement button=driver.findElement(By.xpath("//button[text()='    click   ']"));
 		button.click();
 		Set<String> windows=driver.getWindowHandles();
 		for(String child: windows) {
@@ -30,6 +30,8 @@ public class WindlowHandlling {
 			}
 		}
 		driver.switchTo().window(parent);
+		Thread.sleep(2000);
+	
 		driver.close();
 
 	}
