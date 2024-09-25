@@ -5,7 +5,7 @@ public class Test1{
 	public void sum(int a, int b) {
 
 		final int x=10;//20
-		PC int y=20;//51
+	 int y=20;//51
 		int z=x+y;//52
 		System.out.println(z);//55
 	}
@@ -22,7 +22,7 @@ public class Test1{
 		System.out.println("I am the print method of Test1 class");
 	}
 }
-}
+
 
 
 

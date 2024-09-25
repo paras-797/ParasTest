@@ -3,11 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.csg.tau.TestProject.TestScript.AlertHandling">
+      <class name="com.csg.tau.TestProject.TestScript.RestAssuredTest">
         <methods>
-          <include name="main"/>
+          <include name="GetBooksDetails"/>
         </methods>
-      </class> <!-- com.csg.tau.TestProject.TestScript.AlertHandling -->
+      </class> <!-- com.csg.tau.TestProject.TestScript.RestAssuredTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

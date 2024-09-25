@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Suite]">
-  <test parallel="none" name="Test(failed)">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="com.csg.tau.TestProject.TestScript.MultipleMethods">
-        <methods>
-          <include name="mtest"/>
-          <include name="ktest"/>
-          <include name="btest"/>
-          <include name="atest"/>
-          <include name="ztest"/>
-          <include name="ltest"/>
-        </methods>
-      </class> <!-- com.csg.tau.TestProject.TestScript.MultipleMethods -->
       <class name="com.csg.tau.TestProject.TestScript.AlertsHandle">
         <methods>
           <include name="xyz"/>

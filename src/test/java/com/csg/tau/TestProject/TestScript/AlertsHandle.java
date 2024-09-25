@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class AlertsHandle {
 	@Test
 	public void xyz() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sys\\Downloads\\chrome-win32\\chrome.exe");
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://demo.automationtesting.in/Alerts.html");
@@ -22,7 +22,33 @@ public class AlertsHandle {
 		al.sendKeys("test text");
 		al.accept();
 		
+		WebElement searchBox=driver.findElement(By.name("field-keywords"));
+		searchBox.sendKeys("hairdryer");
+		
+		WebElement serachButton=driver.findElement(By.name("field-keywords"));
+		serachButton.click();
+		xpath
+		absolute relative xpath
+		
 		driver.close();
+		
+		abc123
+		abc234
+		abc456
+		driver.quit();
+		
+		/html/body/div[1]/header/div/div[1]/div[2]/div/form/div[3]/div/span/input
+		//*
+		WebElement button=driver.findElement(By.xpath("//select[@class='form-control']/input"));
+		
+		driver.findElement(By.cssSelector("select.form-control>input"));
+		id="abc"
+				@id="abc"
+				#abc
+		button.click();
+		
+		
+		
 	}
 
 }

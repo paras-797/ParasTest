@@ -1,11 +1,17 @@
 package com.csg.tau.TestProject.TestScript;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Frameshandling {
 
@@ -26,7 +32,6 @@ public class Frameshandling {
 			textbox.sendKeys("Paras");
 			driver.switchTo().defaultContent();
 			driver.close();
-			
 		}catch(ElementNotVisibleException e) {
 			e.printStackTrace();
 		}catch(Exception ex) {
@@ -42,8 +47,4 @@ public class Frameshandling {
 
 	}
 	
-	Waits:
-		1. Implicit wait
-		2. WebDriverWait - Explicitwait, fluent wait
-
 }
